@@ -34,6 +34,17 @@
 				// データをすべて削除する
 				// sessionStorage.clear()
 
+				localStorage.setItem('name', 'Taro')
+				localStorage.setItem('age', '20')
+				localStorage.setItem('address', 'Tokyo')
+				localStorage.setItem('phone', '090-1234-5678')
+				localStorage.setItem('email', 'xxxx-xxxx.com')
+				// データをすべて取り出す
+				for (var i = 0; i < sessionStorage.length; i++) {
+					console.log(sessionStorage.key(i))
+					console.log(sessionStorage.getItem(sessionStorage.key(i)))
+				}
+
 				// console.log('Web Storage is supported!')
 				// console.log('Web Storage is supported!')
 
