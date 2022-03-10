@@ -14,7 +14,15 @@
 			if (typeof(Storage) === 'undefined') {
 				alert('Sorry, your browser does not support Web Storage...')
 			} else {
-				console.log('Web Storage is supported!')
+				// sessionStorage.getItem(key)
+				sessionStorage.setItem('name', 'Taro')
+				sessionStorage.setItem('age', '20')
+
+				console.log(sessionStorage.getItem('name'))
+				console.log(sessionStorage.getItem('age'))
+
+				// console.log('Web Storage is supported!')
+				// console.log('Web Storage is supported!')
 
 				// ルール
 				// 同一オリジン（オリジンは URL のようなもの）でデータを保存する
