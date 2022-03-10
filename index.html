@@ -14,12 +14,26 @@
 			if (typeof(Storage) === 'undefined') {
 				alert('Sorry, your browser does not support Web Storage...')
 			} else {
+				// データを保存する
+				// sessionStorage.setItem(key, value)
+
+				// データを取得する
 				// sessionStorage.getItem(key)
+
 				sessionStorage.setItem('name', 'Taro')
 				sessionStorage.setItem('age', '20')
 
 				console.log(sessionStorage.getItem('name'))
+				console.log('name saved!')
 				console.log(sessionStorage.getItem('age'))
+				console.log('age saved!')
+
+
+				// データを削除する
+				// sessionStorage.removeItem(key)
+
+				// データをすべて削除する
+				// sessionStorage.clear()
 
 				// console.log('Web Storage is supported!')
 				// console.log('Web Storage is supported!')
