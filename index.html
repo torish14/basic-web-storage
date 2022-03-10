@@ -15,6 +15,21 @@
 				alert('Sorry, your browser does not support Web Storage...')
 			} else {
 				console.log('Web Storage is supported!')
+
+				// ルール
+				// 同一オリジン（オリジンは URL のようなもの）でデータを保存する
+				// オリジンが一緒であれば、同じデータを保存できる
+				// http はスキーム
+				// 192.168.10 はホスト
+				// 8000 はポート
+				// これらをあわせてオリジンと呼ぶ
+				// http://192.168.38.10:8000/index.html
+				// http://192.168.38.10:8000/cart.html
+				// http://192.168.38.10:8000/app/index.html
+
+				// 種類
+				// sessionStorage: タブが閉じられるまで有効
+				// localStorage: ブラウザ自体にずっと保存
 			}
 		})()
 	</script>
