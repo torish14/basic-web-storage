@@ -8,5 +8,15 @@
 </head>
 <body>
 	<h1>Hello!</h1>
+	<script>
+		// 即時関数を使う
+		(function(){
+			if (typeof(Storage) === 'undefined') {
+				alert('Sorry, your browser does not support Web Storage...')
+			} else {
+				console.log('Web Storage is supported!')
+			}
+		})()
+	</script>
 </body>
 </html>
