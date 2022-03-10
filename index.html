@@ -45,6 +45,20 @@
 					console.log(sessionStorage.getItem(sessionStorage.key(i)))
 				}
 
+				// JSON ⇔ 文字列
+				// JSON.stringify(object)
+				// JSON.parse(string)
+				const user = {
+					name: 'Taro',
+					age: 20,
+					address: 'Tokyo',
+					phone: '090-1234-5678',
+					email: 'xxxx-xxxx.com'
+				}
+
+				localStorage.setItem('user', JSON.stringify(user))
+				console.log(JSON.parse(localStorage.getItem('user')))
+
 				// console.log('Web Storage is supported!')
 				// console.log('Web Storage is supported!')
 
