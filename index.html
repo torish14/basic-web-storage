@@ -59,7 +59,24 @@
 				// localStorage.setItem('user', JSON.stringify(user))
 				// console.log(JSON.parse(localStorage.getItem('user')))
 
-				// console.log('Web Storage is supported!')
+				// イベントで、異なるブラウザのデータの整合性をとる
+				window.addEventListener('storage', function(e){
+					// e.key でデータを取得できる
+					console.log('e.key:' + e.key)
+
+					// e.oldValue で古い値を取得できる
+					console.log('e.oldValue:' + e.oldValue)
+
+					// e.newValue で新しい値を取得できる
+					console.log('e.newValue:' + e.newValue)
+
+					// e.storageArea でストレージエリアを取得できる
+					console.log('e.storageArea:' + e.storageArea)
+
+					// e.url でオリジンを取得できる
+					console.log('e.url:' + e.url)
+				})
+
 				// console.log('Web Storage is supported!')
 
 				// ルール
